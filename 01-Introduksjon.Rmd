@@ -2,7 +2,8 @@
 
 Dette er et dokument under arbeid. 
 
-# Liste over lovverk
+# LOVER OG FØRINGER
+## Liste over lovverk
 
 Her plasseres en liste over aktuelt lovverk for helseregisterfeltet:
 
@@ -27,7 +28,8 @@ https://lovdata.no/dokument/SF/forskrift/2001-12-21-1476)
 
 
 
-# Om data og åpne data 
+# DATA
+## Om data og åpne data 
 
 Her plasseres en liste over grunnleggende prinsipper eller føringer :
 
@@ -46,4 +48,14 @@ https://ehelse.no/standarder/ikke-standarder/veileder-for-bruk-av-FAIR-prinsippe
 **Bearbeiding og bruk av data**
 
 * Tidy data-prinsipper (Hadely Wickham)
+
+
+# GRAFISKE PRESENTASJONER
+## Standardisering av resultater årsrapporten og annet
+Standarder presentasjon av resultater - se spesielt Standardiseringsdokumentet: 
+https://www.kvalitetsregistre.no/artikkel/standardisering-av-resultater-til-offentliggjoring
+
+## Fere farger
+Se her: 
+https://helse-nord.no/Documents/Profilhandbok/Profilprogram%20Helse%20Nord.pdf
 
