@@ -49,6 +49,140 @@ https://ehelse.no/standarder/ikke-standarder/veileder-for-bruk-av-FAIR-prinsippe
 
 * Tidy data-prinsipper (Hadely Wickham)
 
+## Om datakvalitet
+
+### Definisjoner og dimensjoner av datakvalitet
+Definisjoner av datakvalitet (Varmdal, 2019):
+
+> Data kan sies Ã¥ vÃ¦re av god kvalitet nÃ¥r relevante, korrekte og komplette data er tilgjengelige for brukerne nÃ¥r de trenger det og i et format de kan benytte.
+
+
+NÃ¦rmere definisjon av datakvalitet i et register (Varmdal, 2019):
+
+> Alle trekk og karakteristika ved datasettet som pÃ¥virker dataenes evne til Ã¥ oppfylle registerets _formÃ¥l_.
+> 
+> Datakvaliteten defineres sÃ¥ledes av _brukeren_ â data mÃ¥ vÃ¦re egnet til den Ã¸nskede bruken.
+
+
+
+Datakvalitetsdimensjoner (Varmdal, 2019):
+
+* Relevans 
+* Korrekthet 
+* Reliabilitet 
+* Aktualitet 
+* Sammenlignbarhet
+* Kompletthet
+
+Basert pÃ¥ denne kategoriseringen, kan en alternativ presentasjon av kategoriene vÃ¦re Ã¥ samle de som har Ã¥ gjÃ¸re med _validitet_ i en kategori med underkategorier:
+
+* Relevans
+* __Validitet__
+  * Korrekthet (intern validitet - mÃ¥ler dataene det vi mener de mÃ¥ler)
+  * Kompletthet (ekstern validitet - overfÃ¸rbarhet til sin pasientgruppe)
+  * Sammenlignbarhet (ekstern validitet - overfÃ¸rbarhet til andre pasientgrupper, e.g. Sverige)
+* Reliabilitet (data mÃ¥ vÃ¦re reliable for Ã¥ vÃ¦re valide, men kan vÃ¦re reliabel uten Ã¥ vÃ¦re valid)
+* Aktualitet
+
+#### Dimensjon: Relevans
+Relevansen mÃ¥ sees opp mot mÃ¥let for innsamlingen av dataene. MÃ¥let med NorSpis er forbedring av behandlingskvaliteten. 
+
+Faglig skjÃ¸nn mÃ¥ brukes til Ã¥ vurdere dataenes relevans. For behandling for spiseforstyrrelser har man ogsÃ¥ _nasjonale faglige retningslinjer_, som gir flere anbefalinger i behandlingen. Et mÃ¥l pÃ¥ dataenes relevans kan sÃ¥ledes vÃ¦re dataenes evne til Ã¥ mÃ¥le oppnÃ¥else av retningslinjene: _Hvor mange av anbefalingene i retningslinjene, og som er mulige Ã¥ mÃ¥le, mÃ¥les i NorSpis?_
+
+#### Dimensjon: Validitet 1 - _korrekthet_ (intern validitet)
+
+
+
+Tabellen under har tatt utgangspunkt i presentasjon av Varmland (2019), med enkelte modifikasjoner, endringer av formuleringer, samt tillegg, som en kolonne med hvilket spÃ¸rsmÃ¥l knyttet til bruken av data datakvalitetsmÃ¥let kan besvare/forsikre om/sÃ¥ tvil om. 
+
+```{r, echo=FALSE, message=FALSE} 
+library(dplyr)
+library(flextable)
+DQ_overview <- read.csv2('INSERT PATH******/datakval_maaloversikt_norspis2.csv', header=T, encoding ="ISO-8859-1", sep = ';') #encoding, see: https://stackoverflow.com/questions/46427018/problems-with-special-scandinavian-characters-reading-big-txt-file
+
+DQ_overview2 <-DQ_overview %>% select(c(1:8)) #not including the last/9th column on "Dato in NorSpis"
+
+#flextable
+DQ_overview2 <- flextable(DQ_overview2)
+
+DQ_overview2 <- align(DQ_overview2, align = "l",part = "all")
+
+DQ_overview2 <- valign(DQ_overview2, valign = "top",part = "all")
+#DQ_overview2 <- autofit(DQ_overview2)
+  #change labels/column names
+  DQ_overview2 <- set_header_labels(DQ_overview2,
+                              #Dimensjon
+                              #Kriterium
+                              Hvordan.mÃ¥le..mÃ¥le.hva. = "Beskrivelse",
+                              Notat.om.mÃ¥l.metode = "Om mÃ¥l/ metode",
+                              Viktig.for.spÃ¸rsmÃ¥let. = "SpÃ¸rsmÃ¥l",
+                              I.NorSpis= "Mulighet i NorSpis",
+                              Eksisterer.mÃ¥let.dokumentet.i.NorSpis= "Ekisterer i NorSpis",
+                              Prioritert.2020 = "Prioritert 2020",
+                              Dato.i.NorSpis = "Dato i NorSpis")
+  #change column width:
+    #DQ_overview2 <- width(DQ_overview2, j = ~ Notat.om.mÃ¥l.metode, width = 3)
+    #equivalent:
+    DQ_overview2 <- width(DQ_overview2, j = 1, width = 1)
+    DQ_overview2 <- width(DQ_overview2, j = 2:3, width = 2)
+    DQ_overview2 <- width(DQ_overview2, j = 4, width = 3)
+    DQ_overview2 <- width(DQ_overview2, j = 5:6, width = 2)
+    DQ_overview2 <- width(DQ_overview2, j = 7:8, width = 1)  
+    DQ_overview2 <- color(DQ_overview2, j = 4, color = "blue", part = "all")
+    DQ_overview2 <- merge_v(DQ_overview2, j = 1:2)
+    DQ_overview2 <- theme_vanilla(DQ_overview2) #https://rdrr.io/cran/flextable/man/theme_zebra.html
+    DQ_overview2 <- align(DQ_overview2, align = "left")
+    DQ_overview2 <- bg(DQ_overview2, bg = "grey", part = "header")
+      border <- officer::fp_border()
+    DQ_overview2 <- vline(DQ_overview2, j = c(2), border = border, part = "all")
+    DQ_overview2 <- color(DQ_overview2, i = ~ grepl("Kan kvantifiseres.|Kvantitativt|Kvantifisering|Tilslutningsgrad", DQ_overview[[6]]),
+                          j = c(6),
+                          color = "Blue", part = "body")
+    DQ_overview2 <- color(DQ_overview2, i = ~ grepl("dokument", DQ_overview[[6]]),
+                          j = c(6),
+                          color = "Orange", part = "body")
+        DQ_overview2 <- color(DQ_overview2, i = ~ grepl("Nasjonale retningslinjer|Tilslutningsgrad|Foretatt enkle|MÃ¥l ligger|Kvantitativt mÃ¥l", DQ_overview[[6]]),
+                              j = c(6),
+                          color = "Darkgreen", part = "body")
+
+
+
+  DQ_overview2
+
+  
+
+#Good minus
+# htmlTable::htmlTable(DQ_overview, align='l', 
+#                     col.rgroup = c("none", "#F7F7F7")) #not possble to valign with htmlTable(?)
+
+#Good minus
+ # library(dplyr)
+ # library(kableExtra)
+ # 
+ # knitr::kable(DQ_overview[,c(1:8)], format="html",
+ #              col.names = ) %>%
+ #   kable_styling(bootstrap_options = "striped", full_width = T) %>%#bootstrap_options = c("striped", "hover"
+ #   column_spec(4, width = "5em", border_right = T, background = 'grey')
+# 
+# #DT package
+# library(DT)
+# datatable(DQ_overview, options = list(pageLength = 50))
+# 
+# #vertical align:
+# datatable(DQ_overview, options = list(pageLength = 50))%>%
+#   formatStyle(1:ncol(DQ_overview),'vertical-align'='top')
+
+```
+
+
+
+
+
+
+
+
+
+
 
 # GRAFISKE PRESENTASJONER
 ## Standardisering av resultater årsrapporten og annet
