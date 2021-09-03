@@ -1,0 +1,52 @@
+Dimensjon;Kriterium;Hvordan måle, måle hva?;Notat om mål/metode;Viktig for spørsmålet:;I NorSpis;Eksisterer målet/dokumentet i NorSpis;Prioritert 2020;Dato i NorSpis
+Relevans;Tilgjengeliggjøring;All kjent bruk av data fra registeret er dokumentert;"Lag et eget dokument med:
+1) Beskriv form, tidspunkt og hyppighet for tilgjengeliggjøring/offentliggjøring av data fra registeret. Dette gjelder alt fra årsrapport, resultattjenester, og faste rapporter som sendes til brukere. Dersom slik oversikt savnes, beskriv plan for å adressere dette.
+2)Angi antall utleveringer av data til forskning/kvalitetsforbedring. Inkludert mottakende organisasjon og tema.
+3)Beskriv annen kjent bruk av data fra registeret, som f.eks. nasjonale indikatorer, analyser/bruk til styring, produktutvikling, pakkeforløp etc.";Blir data brukt, og er slik relevant for brukerne?;Eget dokument, kvalitativ vurdering. ;Nei;Ja;-
+Relevans;Tilpasningsdyktighet;Registeret evner å endre seg etter behov. ;"Lage et dokument hvor det beskrives eksisterende mekanismer for å identifisere brukeres nåværende og fremtidige behov: 
+1) Beskriv mekanismer som bidrar til å identifisere nåværende og fremtidige behov for brukere av data (f.eks. arbeid gjennom fagråd, brukerorganisasjoner, eller andre kliniske eller styringsmessige grupper, brukerundersøkelser, samarbeid med forskere/forskningsinstitusjoner etc.).
+2) Beskriv konkrete endringsbehov som har blitt identifisert og hvorvidt disse har ført til endringer i registeret (eventuelt planer for fremtidige endringer som følge av et identifisert behov).
+3) Registeret er designet slik at det enkelt kan endres ved fremtidige behov (IKT)";Evner registeret å endre seg, og være stadig relevant?;Eget dokument, kvalitativ vurdering. ;Nei;Ja;-
+Relevans;Nytteverdi;Informasjon fra registeret fyller et kunnskapshull, og brukere av data får det de har behov for.;"1.1) Registeret inneholder data som gir viktig informasjon om pasientgruppen: 
+• Beskriv hvordan informasjon fra registeret bidrar til å informere klinikere, ledere og befolkningen om viktige aspekter ved pasientgruppen. 
+• Gjennomfør en brukerundersøkelse for å måle i hvilken grad brukere av data får det de har behov for fra registeret. 
+";Får klinikere, ledere og befolkning den informasjonen de har behov for?;Eget dokument med kvalitativ og eventuelt kvantitativ vurdering gjennom egen brukerundersøkelse;Nei;-;-
+Relevans;Nytteverdi;Informasjon fra registeret fyller et kunnskapshull, og brukere av data får det de har behov for.;1.2) Andel anbefalinger i nasjonale retningslinjer som måles, av de som faktisk kan måles. ;Evner registeret å måle oppfyllelsen av nasjonale retningslinjer?;Kvantifisering: Nasjonale retningslinjer for behandling av spiseforstyrrelser kan gjennomgås.;Nei;Ja;-
+Relevans;Nytteverdi;Informasjon fra registeret fyller et kunnskapshull, og brukere av data får det de har behov for.;2) Det eksisterer dokumentasjon på registerinnholdet (metadata) som er tilgjengelig for brukere.;Kan data fra registeret forstås?;Eget dokument, laget av IT-leverandør, tilgjengelig i registreringsapplikasjonen. Ufullstendig p.t.;Delvis;-;-
+Relevans;Nytteverdi;Informasjon fra registeret fyller et kunnskapshull, og brukere av data får det de har behov for.;"3) Det eksisterer oppdaterte planer for å bedre relevansen i registeret og møte kommende behov.
+• Beskriv planen. 
+• Oppsummer hvilke tiltak som er gjort/gjøres som er direkte relatert til å vedlikeholde eller øke registerets relevans (f.eks. blir endringer i pasientbehandling eller styringssignaler reflektert i registeret).";Vil registeret kunne bli mer nyttig i fremtiden?;Eget dokument, kvalitativ vurdering. ;Nei;-;-
+Korrekthet;Korrekte pasienter;Andel sanne positive pasienter = antall sanne positive/antall registrerte * 100;Journal kan benyttes som gullstandard for sanne verdier. ;Fanger registeret opp målpopulasjonen/er det med pasiener som ikke burde vært med?;Kvantifisering, arbeidskrevende. Kan man anta få registreringer som ikke oppnår inklusjonskriteriene (få falsk positive)?;Nei;Nei;-
+Korrekthet;Korrekt informasjon om pasientene i de målte variablene;Andel sanne positive verdier i variabel = antall sanne positive verdier/antall registrerte verdier * 100;"Journal kan benyttes som gullstandard for sanne verdier.
+Særlig viktig for kvalitetsindikatorer og sentrale justeringsvariabler.";Er den enkelte variabel korrekt/inneholder den feil svar (systematisk eller usystemtatisk målefeil)?;Kvantifisering, arbeidskrevende. Kan vurderes hvordan det kan måles for kvalitetsindikatorer, og justeringsvariable som kjønn. ;Nei;Nei;-
+Kompletthet;Tilslutningsgrad;Andel enheter som rapporterer til registeret av alle som burde ha rapportert;Angis nasjonalt, regionalt og per foretak, og  over tid eller med mål på endring fra i fjor. ;Fanger registeret opp målpopulasjonen? Er resultatene representative nasjonalt?;Det må besluttes en liste over enheter som omfattes av registeret. Tilslutningsgrad kan beregnes totalt, samt for underkategorier av behandlingsenheter.;Nei;Ja;-
+Kompletthet;Dekningsgrad;Andel hendelser (pasienter) som er rapportert inn til registeret av alle som burde vært rapportert inn;Angis nasjonalt, regionalt, per foretak, og per avdeling.;Fanger registeret opp målpopulasjonen? Er resultatene representative nasjonalt, samt per enhet.;Det beregnes for enkelte enheter manuelt. Dekningsgrad kan beregnes for hver enhet, samt totalt.;Delvis;Ja;-
+Kompletthet;Variabelkompletthet;"Andel variabelsvar av alle variabelsvar som burde vært rapportert. 
+Kan også angi agreggerte mål, som andelen variable eller sentrale variable som er komplette.";"Særlig viktig for kvalitetsindikatorer og sentrale justeringsvariabler.
+Kan oppgis per registreringstype (f.eks. start og slutt), samt ""totalt""/aggregert for variable som er konstruert av ulike registreringstyper (som kvalitetsindikatorer som måler endring).";Er den enkelte variabel korrekt/kan svarene generaliseres til populasjonen eller er det fare for at den innholder skjeveheter/systematisk målefeil?;Foretatt enkle undersøkelser i forbindelse med resultater presentert i 2019 (for 2018);Delvis;Ja;-
+Kompletthet;Forløpskompletthet;Andelen komplette forløp (f.eks. antall sluttregistreringer/antall startregistreringer);Viktig å ta i betraktning når tar i bruk resultater, som kvalitetindikatorer som bruker data fra start og sluttregistreringer. ;Er mål som baserer seg på både start- og sluttregistrering korrekt/kan svarene generaliseres til populasjonen eller er det fare for at de inneholder skjeveheter/systematisk målefeil?;Mål ligger i Rapporteket for NorSpis - men er ikke testet og publisert. ;Delvis;Ja;-
+Sammenlignbarhet;Intern sammenlignbarhet;Sammenlignbarhet over tid innad i registeret: I hvilken grad registerets inklusjonskriterier, variabler og kodeverk er konsistente over tid;"Historiske endringer:
+• Hvilke år har registeret samlet data fra. 
+• Angi om inklusjonskriteriene har vært konsistente i alle år. Hvis ikke, angi på hvilken måte kriteriene har endret seg og tidspunkt for endring. 
+•Angi historiske endringer for:  
+- Populasjon 
+- Innrapporterende enheter 
+- Kodeverk og variabler. 
+
+Dersom man ikke har dokumentasjon på endringer over tid, angi årsak og plan for å adressere dette";Kan man sammenligne resultateter fra år til år?;Eget dokument/kvalitativ vurdering. ;Nei;Ja;-
+Sammenlignbarhet;Ekstern sammenlignbarhet;Sammenlignbarhet på tvers av datakilder: I hvilken grad registeret er sammenlignbart (og mulig å koble) med andre datakilder;"Koblingsmuligheter:
+• Angi om registeret inneholder en unik person-ID som muliggjør kobling med andre datakilder (f.eks. fødselsnummer). 
+• Angi om registeret inneholder en unik enhets-ID som muliggjør identifisering av enheter/organisasjoner ved kobling mot andre datakilder. 
+• Angi om registeret inneholder en unik geografisk ID som muliggjør sammenligninger på geografisk nivå ved kobling mot andre datakilder (f.eks. region, fylke, kommune).  
+• Angi eventuelle begrensninger ved kobling mot andre datakilder, og en plan for å adressere dette.";Kan man sammenligne resultatene med andre funn hvor andre datakilder er brukt?;Eget dokument/sjekkliste. ;Nei;Ja;-
+Reliabilitet;Innholdet i registeret er reproduserbart;Gode variable som er entydig definert. ;"Inter-rater reliabilitet, med to eller flere registrarer (enten med ekte caser eller fiktive, men realisiiske caser i et realitisk registreringsmiljø). 
+
+Intra-rater reliabilitet, hvor en registrar registerer samme informasjon to ganger. ";Foreligger det usystematisk skjevheter/målefeil?;Kvantifisering, arbeidskrevende - egen forskningsstudie.   ;Nei;Nei;-
+Aktualitet;Aktualitet for innrapportering;Data innrapportert fra sykehus innen rimelig tid;"Andel hendelser som er rapportert innen rimelig tid siste hele år og endringer fra foregående år, angis på nasjonalt, regionalt og enhetsnivå. Hva som er rimelig tid vil variere mellom ulike registre, angi hva ditt register har definert som rimelig tid til innrapportering.
+
+";Er dataene ferske nok til å kunne brukes?;Kvantitativt mål. ;Nei;Ja;-
+Aktualitet;Aktualitet for innrapportering;Data innrapportert fra sykehus innen rimelig tid;Median dager fra hendelsen/forløpet var ferdig til innregistrering i registeret, angi for siste hele år og endringer fra foregående år - på nasjonalt, regionalt og enhetsnivå.;Er dataene ferske nok til å kunne brukes til formålet?;Kvantitativt mål. ;Nei;Ja;-
+Aktualitet;Tilgjengeliggjøring av preliminære data;Preliminære data er tilgjengelige, og kvalitet og begrensninger er dokumentert for brukere.;"Beskriv hvilke preliminære data som tilgjengeliggjøres, gjennom hvilke kanaler, og kjente begrensninger ved de preliminære dataene. 
+";Er dataene ferske nok til å kunne brukes til formålet - får brukeren dataene tidsnok?;Kvalitativ vurdering og sjekkliste. ;Nei;Ja;-
+Aktualitet;Tilgjengeliggjøring av årsdata;Tilgjengeliggjøring av årsdata skjer til planlagt tid.;Forskjell mellom planlagt dato for tilgjengeliggjøring og faktisk dato for tilgjengeliggjøring.;Er årsdataene ferske nok til å kunne brukes til formålet? Tilgjengligjøres de tidsnok, etter planen?;Kan kvantifiseres. ;Delvis;Ja;-
+Aktualitet;Tilgjengeliggjøring av årsdata;Tilgjengeliggjøring av årsdata skjer til planlagt tid.; Tid fra slutten av referanseperioden (utgangen av året) til tilgjengeliggjøring;Er årsdataene ferske nok til å kunne brukes til formålet?;Kan kvantifiseres. ;Delvis;Ja;-
